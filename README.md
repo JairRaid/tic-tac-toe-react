@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL:
-- Live Site URL:
+- Solution URL: https://github.com/JairRaid/tic-tac-toe-react
+- Live Site URL: https://jairraid.github.io/tic-tac-toe-react/
 
 ## My process
 
