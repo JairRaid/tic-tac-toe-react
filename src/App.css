@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Outfit";
-  src: url("/assets/fonts/Outfit-VariableFont_wght.ttf") format("truetype");
+  src: url("../public/fonts/Outfit-VariableFont_wght.ttf") format("truetype");
 }
 * {
   margin: 0;
@@ -12,7 +12,7 @@ html,
 body {
   width: 100%;
   height: 100%;
-  background-color: #1A2A33;
+  background-color: #1a2a33;
   font-family: "Outfit", sans-serif;
 }
 
@@ -41,16 +41,16 @@ button {
     margin-bottom: 32px;
   }
   .choose-mark {
-    background-color: #1F3641;
+    background-color: #1f3641;
     padding: 24px 24px 30px 24px;
     border-radius: 15px;
     text-align: center;
     margin-bottom: 32px;
-    box-shadow: inset 0 -8px 0 0 #10212A;
+    box-shadow: inset 0 -8px 0 0 #10212a;
   }
   .choose-mark h1 {
     font-size: 1rem;
-    color: #A8BFC9;
+    color: #a8bfc9;
     font-weight: 700;
     line-height: auto;
     letter-spacing: 1px;
@@ -59,7 +59,7 @@ button {
   }
   .choose-mark .mark-container {
     display: flex;
-    background-color: #1A2A33;
+    background-color: #1a2a33;
     padding: 9px 8px 9px 8px;
     border-radius: 10px;
     height: 72px;
@@ -67,7 +67,7 @@ button {
   }
   .choose-mark p {
     font-size: 0.875rem;
-    color: #A8BFC9;
+    color: #a8bfc9;
     font-weight: 500;
     line-height: auto;
     letter-spacing: 0.88px;
@@ -83,15 +83,17 @@ button {
   }
   .mark-item img {
     height: 32px;
-    filter: brightness(0) saturate(100%) invert(75%) sepia(24%) saturate(186%) hue-rotate(153deg) brightness(94%) contrast(95%);
+    filter: brightness(0) saturate(100%) invert(75%) sepia(24%) saturate(186%)
+      hue-rotate(153deg) brightness(94%) contrast(95%);
   }
   .selected {
-    background-color: #A8BFC9;
+    background-color: #a8bfc9;
     border-radius: 10px;
   }
   .selected img {
     height: 31.74px;
-    filter: brightness(0) saturate(100%) invert(13%) sepia(11%) saturate(1676%) hue-rotate(151deg) brightness(95%) contrast(93%);
+    filter: brightness(0) saturate(100%) invert(13%) sepia(11%) saturate(1676%)
+      hue-rotate(151deg) brightness(95%) contrast(93%);
   }
   .buttons-container {
     width: 100%;
@@ -105,7 +107,7 @@ button {
   .new-game #vs-cpu {
     font-family: "Outfit", sans-serif;
     font-size: 1rem;
-    color: #1A2A33;
+    color: #1a2a33;
     font-weight: 700;
     line-height: auto;
     letter-spacing: 1px;
@@ -114,17 +116,17 @@ button {
     height: 56px;
     padding-bottom: 10px;
     border-radius: 15px;
-    background-color: #F2B137;
-    box-shadow: inset 0 -8px 0 0 #CC8B13;
+    background-color: #f2b137;
+    box-shadow: inset 0 -8px 0 0 #cc8b13;
   }
   .new-game #vs-cpu:hover,
   .new-game #vs-cpu:active {
-    background-color: #FFC860;
+    background-color: #ffc860;
   }
   .new-game #vs-player {
     font-family: "Outfit", sans-serif;
     font-size: 1rem;
-    color: #1A2A33;
+    color: #1a2a33;
     font-weight: 700;
     line-height: auto;
     letter-spacing: 1px;
@@ -133,12 +135,12 @@ button {
     height: 56px;
     padding-bottom: 10px;
     border-radius: 15px;
-    background-color: #31C3BD;
-    box-shadow: inset 0 -8px 0 0 #118C87;
+    background-color: #31c3bd;
+    box-shadow: inset 0 -8px 0 0 #118c87;
   }
   .new-game #vs-player:hover,
   .new-game #vs-player:active {
-    background-color: #65E9E4;
+    background-color: #65e9e4;
   }
   .game-board-header {
     display: flex;
@@ -150,21 +152,21 @@ button {
     justify-content: center;
     align-items: center;
     gap: 0 9px;
-    background-color: #1F3641;
+    background-color: #1f3641;
     width: 96px;
     height: 40px;
     border-radius: 5px;
-    box-shadow: inset 0 -4px 0 0 #10212A;
+    box-shadow: inset 0 -4px 0 0 #10212a;
   }
   .game-board-header .restart-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #A8BFC9;
+    background-color: #a8bfc9;
     width: 40px;
     height: 40px;
     border-radius: 5px;
-    box-shadow: inset 0 -4px 0 0 #6B8997;
+    box-shadow: inset 0 -4px 0 0 #6b8997;
   }
   .game-board {
     position: sticky;
@@ -185,13 +187,14 @@ button {
     position: relative;
     top: -2px;
     width: 16px;
-    filter: brightness(0) saturate(100%) invert(75%) sepia(24%) saturate(186%) hue-rotate(153deg) brightness(94%) contrast(95%);
+    filter: brightness(0) saturate(100%) invert(75%) sepia(24%) saturate(186%)
+      hue-rotate(153deg) brightness(94%) contrast(95%);
   }
   .player-turn p {
     position: relative;
     top: -2px;
     font-size: 0.875rem;
-    color: #A8BFC9;
+    color: #a8bfc9;
     font-weight: 700;
     line-height: auto;
     letter-spacing: 0.88px;
@@ -207,7 +210,7 @@ button {
   }
   .restart-container:hover,
   .restart-container:active {
-    background-color: #DBE8ED;
+    background-color: #dbe8ed;
   }
   .board {
     display: grid;
@@ -221,8 +224,8 @@ button {
     min-height: 96px;
     border-radius: 10px;
     outline: none;
-    background-color: #1F3641;
-    box-shadow: inset 0 -8px 0 0 #10212A;
+    background-color: #1f3641;
+    box-shadow: inset 0 -8px 0 0 #10212a;
     cursor: pointer;
   }
   .board img {
@@ -245,26 +248,26 @@ button {
   }
   .player-score div p:first-child {
     font-size: 0.75rem;
-    color: #1A2A33;
+    color: #1a2a33;
     font-weight: 500;
     line-height: auto;
     letter-spacing: 0.75px;
   }
   .player-score div p:last-child {
     font-size: 1.25rem;
-    color: #1A2A33;
+    color: #1a2a33;
     font-weight: 700;
     line-height: auto;
     letter-spacing: 1.25px;
   }
   .player-score .x-score-container {
-    background-color: #31C3BD;
+    background-color: #31c3bd;
   }
   .player-score .tie-container {
-    background-color: #A8BFC9;
+    background-color: #a8bfc9;
   }
   .player-score .o-score-container {
-    background-color: #F2B137;
+    background-color: #f2b137;
   }
   .game-status {
     position: fixed;
@@ -273,13 +276,13 @@ button {
     justify-content: center;
     width: 100%;
     padding: 40px 0 48px 0;
-    background-color: #1F3641;
+    background-color: #1f3641;
     top: 220px;
     left: 0;
   }
   .winner-screen h2 {
     font-size: 0.875rem;
-    color: #A8BFC9;
+    color: #a8bfc9;
     font-weight: 700;
     line-height: auto;
     letter-spacing: 0.88px;
@@ -288,7 +291,7 @@ button {
   }
   .winner-screen p {
     font-size: 1.5rem;
-    color: #F2B137;
+    color: #f2b137;
     font-weight: 700;
     line-height: auto;
     letter-spacing: 1.5px;
@@ -310,7 +313,7 @@ button {
   .winner-screen button {
     font-family: "Outfit", sans-serif;
     font-size: 1rem;
-    color: #1A2A33;
+    color: #1a2a33;
     font-weight: 700;
     line-height: auto;
     letter-spacing: 1px;
@@ -318,25 +321,25 @@ button {
     border-radius: 10px;
   }
   .winner-screen button:first-child {
-    background-color: #A8BFC9;
-    box-shadow: inset 0 -4px 0 0 #6B8997;
+    background-color: #a8bfc9;
+    box-shadow: inset 0 -4px 0 0 #6b8997;
   }
   .winner-screen button:last-child {
-    background-color: #F2B137;
-    box-shadow: inset 0 -4px 0 0 #CC8B13;
+    background-color: #f2b137;
+    box-shadow: inset 0 -4px 0 0 #cc8b13;
   }
   .winner-screen button:first-child:hover,
   .winner-screen button:first-child:active {
-    background-color: #DBE8ED;
+    background-color: #dbe8ed;
   }
   .winner-screen button:last-child:hover,
   .winner-screen button:last-child:active {
-    background-color: #FFC860;
+    background-color: #ffc860;
   }
   .tied-screen h2,
   .restart-screen h2 {
     font-size: 1.5rem;
-    color: #A8BFC9;
+    color: #a8bfc9;
     font-weight: 700;
     line-height: auto;
     letter-spacing: 0.88px;
@@ -355,7 +358,7 @@ button {
   .restart-screen button {
     font-family: "Outfit", sans-serif;
     font-size: 1rem;
-    color: #1A2A33;
+    color: #1a2a33;
     font-weight: 700;
     line-height: auto;
     letter-spacing: 1px;
@@ -364,25 +367,25 @@ button {
   }
   .tied-screen button:first-child,
   .restart-screen button:first-child {
-    background-color: #A8BFC9;
-    box-shadow: inset 0 -4px 0 0 #6B8997;
+    background-color: #a8bfc9;
+    box-shadow: inset 0 -4px 0 0 #6b8997;
   }
   .tied-screen button:last-child,
   .restart-screen button:last-child {
-    background-color: #F2B137;
-    box-shadow: inset 0 -4px 0 0 #CC8B13;
+    background-color: #f2b137;
+    box-shadow: inset 0 -4px 0 0 #cc8b13;
   }
   .tied-screen button:first-child:hover,
   .tied-screen button:first-child:active,
   .restart-screen button:first-child:hover,
   .restart-screen button:first-child:active {
-    background-color: #DBE8ED;
+    background-color: #dbe8ed;
   }
   .tied-screen button:last-child:hover,
   .tied-screen button:last-child:active,
   .restart-screen button:last-child:hover,
   .restart-screen button:last-child:active {
-    background-color: #FFC860;
+    background-color: #ffc860;
   }
   .overlay {
     position: fixed;
@@ -397,24 +400,26 @@ button {
     display: none;
   }
   .x-win {
-    color: #31C3BD !important;
+    color: #31c3bd !important;
   }
   .o-win {
-    color: #F2B137 !important;
+    color: #f2b137 !important;
   }
   .x-win-button {
     background-color: #31c3bd !important;
-    box-shadow: inset 0 -8px 0 0 #118C87 !important;
+    box-shadow: inset 0 -8px 0 0 #118c87 !important;
   }
   .x-win-button img {
-    filter: brightness(0) saturate(100%) invert(13%) sepia(11%) saturate(1676%) hue-rotate(151deg) brightness(95%) contrast(93%);
+    filter: brightness(0) saturate(100%) invert(13%) sepia(11%) saturate(1676%)
+      hue-rotate(151deg) brightness(95%) contrast(93%);
   }
   .o-win-button {
-    background-color: #F2B137 !important;
-    box-shadow: inset 0 -8px 0 0 #CC8B13 !important;
+    background-color: #f2b137 !important;
+    box-shadow: inset 0 -8px 0 0 #cc8b13 !important;
   }
   .o-win-button img {
-    filter: brightness(0) saturate(100%) invert(13%) sepia(11%) saturate(1676%) hue-rotate(151deg) brightness(95%) contrast(93%);
+    filter: brightness(0) saturate(100%) invert(13%) sepia(11%) saturate(1676%)
+      hue-rotate(151deg) brightness(95%) contrast(93%);
   }
 }
 @media (min-width: 48.063rem) {
@@ -438,16 +443,16 @@ button {
     margin-bottom: 32px;
   }
   .choose-mark {
-    background-color: #1F3641;
+    background-color: #1f3641;
     padding: 24px 24px 30px 24px;
     border-radius: 15px;
     text-align: center;
     margin-bottom: 32px;
-    box-shadow: inset 0 -8px 0 0 #10212A;
+    box-shadow: inset 0 -8px 0 0 #10212a;
   }
   .choose-mark h1 {
     font-size: 1rem;
-    color: #A8BFC9;
+    color: #a8bfc9;
     font-weight: 700;
     line-height: auto;
     letter-spacing: 1px;
@@ -456,7 +461,7 @@ button {
   }
   .choose-mark .mark-container {
     display: flex;
-    background-color: #1A2A33;
+    background-color: #1a2a33;
     padding: 9px 8px 9px 8px;
     border-radius: 10px;
     height: 72px;
@@ -464,7 +469,7 @@ button {
   }
   .choose-mark p {
     font-size: 0.875rem;
-    color: #A8BFC9;
+    color: #a8bfc9;
     font-weight: 500;
     line-height: auto;
     letter-spacing: 0.88px;
@@ -480,15 +485,17 @@ button {
   }
   .mark-item img {
     height: 32px;
-    filter: brightness(0) saturate(100%) invert(75%) sepia(24%) saturate(186%) hue-rotate(153deg) brightness(94%) contrast(95%);
+    filter: brightness(0) saturate(100%) invert(75%) sepia(24%) saturate(186%)
+      hue-rotate(153deg) brightness(94%) contrast(95%);
   }
   .selected {
-    background-color: #A8BFC9;
+    background-color: #a8bfc9;
     border-radius: 10px;
   }
   .selected img {
     height: 31.74px;
-    filter: brightness(0) saturate(100%) invert(13%) sepia(11%) saturate(1676%) hue-rotate(151deg) brightness(95%) contrast(93%);
+    filter: brightness(0) saturate(100%) invert(13%) sepia(11%) saturate(1676%)
+      hue-rotate(151deg) brightness(95%) contrast(93%);
   }
   .buttons-container {
     width: 100%;
@@ -502,7 +509,7 @@ button {
   .new-game #vs-cpu {
     font-family: "Outfit", sans-serif;
     font-size: 1.25rem;
-    color: #1A2A33;
+    color: #1a2a33;
     font-weight: 700;
     line-height: auto;
     letter-spacing: 1px;
@@ -511,17 +518,17 @@ button {
     height: 67px;
     padding-bottom: 10px;
     border-radius: 15px;
-    background-color: #F2B137;
-    box-shadow: inset 0 -8px 0 0 #CC8B13;
+    background-color: #f2b137;
+    box-shadow: inset 0 -8px 0 0 #cc8b13;
   }
   .new-game #vs-cpu:hover,
   .new-game #vs-cpu:active {
-    background-color: #FFC860;
+    background-color: #ffc860;
   }
   .new-game #vs-player {
     font-family: "Outfit", sans-serif;
     font-size: 1.25rem;
-    color: #1A2A33;
+    color: #1a2a33;
     font-weight: 700;
     line-height: auto;
     letter-spacing: 1px;
@@ -530,12 +537,12 @@ button {
     height: 67px;
     padding-bottom: 10px;
     border-radius: 15px;
-    background-color: #31C3BD;
-    box-shadow: inset 0 -8px 0 0 #118C87;
+    background-color: #31c3bd;
+    box-shadow: inset 0 -8px 0 0 #118c87;
   }
   .new-game #vs-player:hover,
   .new-game #vs-player:active {
-    background-color: #65E9E4;
+    background-color: #65e9e4;
   }
   .game-board-header {
     display: flex;
@@ -547,21 +554,21 @@ button {
     justify-content: center;
     align-items: center;
     gap: 0 13px;
-    background-color: #1F3641;
+    background-color: #1f3641;
     width: 140px;
     height: 52px;
     border-radius: 5px;
-    box-shadow: inset 0 -4px 0 0 #10212A;
+    box-shadow: inset 0 -4px 0 0 #10212a;
   }
   .game-board-header .restart-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #A8BFC9;
+    background-color: #a8bfc9;
     width: 52px;
     height: 52px;
     border-radius: 5px;
-    box-shadow: inset 0 -4px 0 0 #6B8997;
+    box-shadow: inset 0 -4px 0 0 #6b8997;
   }
   .game-board {
     display: flex;
@@ -580,13 +587,14 @@ button {
     position: relative;
     top: -2px;
     width: 20px;
-    filter: brightness(0) saturate(100%) invert(75%) sepia(24%) saturate(186%) hue-rotate(153deg) brightness(94%) contrast(95%);
+    filter: brightness(0) saturate(100%) invert(75%) sepia(24%) saturate(186%)
+      hue-rotate(153deg) brightness(94%) contrast(95%);
   }
   .player-turn p {
     position: relative;
     top: -2px;
     font-size: 1rem;
-    color: #A8BFC9;
+    color: #a8bfc9;
     font-weight: 700;
     line-height: auto;
     letter-spacing: 0.88px;
@@ -602,7 +610,7 @@ button {
   }
   .restart-container:hover,
   .restart-container:active {
-    background-color: #DBE8ED;
+    background-color: #dbe8ed;
   }
   .board {
     display: grid;
@@ -616,8 +624,8 @@ button {
     min-height: 140px;
     border-radius: 10px;
     outline: none;
-    background-color: #1F3641;
-    box-shadow: inset 0 -8px 0 0 #10212A;
+    background-color: #1f3641;
+    box-shadow: inset 0 -8px 0 0 #10212a;
     cursor: pointer;
   }
   .board img {
@@ -640,26 +648,26 @@ button {
   }
   .player-score div p:first-child {
     font-size: 0.75rem;
-    color: #1A2A33;
+    color: #1a2a33;
     font-weight: 500;
     line-height: auto;
     letter-spacing: 0.75px;
   }
   .player-score div p:last-child {
     font-size: 1.5rem;
-    color: #1A2A33;
+    color: #1a2a33;
     font-weight: 700;
     line-height: auto;
     letter-spacing: 1.25px;
   }
   .player-score .x-score-container {
-    background-color: #31C3BD;
+    background-color: #31c3bd;
   }
   .player-score .tie-container {
-    background-color: #A8BFC9;
+    background-color: #a8bfc9;
   }
   .player-score .o-score-container {
-    background-color: #F2B137;
+    background-color: #f2b137;
   }
   .game-status {
     position: fixed;
@@ -668,13 +676,13 @@ button {
     justify-content: center;
     width: 100%;
     padding: 40px 0 48px 0;
-    background-color: #1F3641;
+    background-color: #1f3641;
     top: 220px;
     left: 0;
   }
   .winner-screen h2 {
     font-size: 0.875rem;
-    color: #A8BFC9;
+    color: #a8bfc9;
     font-weight: 700;
     line-height: auto;
     letter-spacing: 0.88px;
@@ -683,7 +691,7 @@ button {
   }
   .winner-screen p {
     font-size: 1.5rem;
-    color: #F2B137;
+    color: #f2b137;
     font-weight: 700;
     line-height: auto;
     letter-spacing: 1.5px;
@@ -705,7 +713,7 @@ button {
   .winner-screen button {
     font-family: "Outfit", sans-serif;
     font-size: 1rem;
-    color: #1A2A33;
+    color: #1a2a33;
     font-weight: 700;
     line-height: auto;
     letter-spacing: 1px;
@@ -713,25 +721,25 @@ button {
     border-radius: 10px;
   }
   .winner-screen button:first-child {
-    background-color: #A8BFC9;
-    box-shadow: inset 0 -4px 0 0 #6B8997;
+    background-color: #a8bfc9;
+    box-shadow: inset 0 -4px 0 0 #6b8997;
   }
   .winner-screen button:last-child {
-    background-color: #F2B137;
-    box-shadow: inset 0 -4px 0 0 #CC8B13;
+    background-color: #f2b137;
+    box-shadow: inset 0 -4px 0 0 #cc8b13;
   }
   .winner-screen button:first-child:hover,
   .winner-screen button:first-child:active {
-    background-color: #DBE8ED;
+    background-color: #dbe8ed;
   }
   .winner-screen button:last-child:hover,
   .winner-screen button:last-child:active {
-    background-color: #FFC860;
+    background-color: #ffc860;
   }
   .tied-screen h2,
   .restart-screen h2 {
     font-size: 1.5rem;
-    color: #A8BFC9;
+    color: #a8bfc9;
     font-weight: 700;
     line-height: auto;
     letter-spacing: 0.88px;
@@ -750,7 +758,7 @@ button {
   .restart-screen button {
     font-family: "Outfit", sans-serif;
     font-size: 1rem;
-    color: #1A2A33;
+    color: #1a2a33;
     font-weight: 700;
     line-height: auto;
     letter-spacing: 1px;
@@ -759,25 +767,25 @@ button {
   }
   .tied-screen button:first-child,
   .restart-screen button:first-child {
-    background-color: #A8BFC9;
-    box-shadow: inset 0 -4px 0 0 #6B8997;
+    background-color: #a8bfc9;
+    box-shadow: inset 0 -4px 0 0 #6b8997;
   }
   .tied-screen button:last-child,
   .restart-screen button:last-child {
-    background-color: #F2B137;
-    box-shadow: inset 0 -4px 0 0 #CC8B13;
+    background-color: #f2b137;
+    box-shadow: inset 0 -4px 0 0 #cc8b13;
   }
   .tied-screen button:first-child:hover,
   .tied-screen button:first-child:active,
   .restart-screen button:first-child:hover,
   .restart-screen button:first-child:active {
-    background-color: #DBE8ED;
+    background-color: #dbe8ed;
   }
   .tied-screen button:last-child:hover,
   .tied-screen button:last-child:active,
   .restart-screen button:last-child:hover,
   .restart-screen button:last-child:active {
-    background-color: #FFC860;
+    background-color: #ffc860;
   }
   .overlay {
     position: fixed;
@@ -792,29 +800,31 @@ button {
     display: none;
   }
   .x-win {
-    color: #31C3BD !important;
+    color: #31c3bd !important;
   }
   .o-win {
-    color: #F2B137 !important;
+    color: #f2b137 !important;
   }
   .x-win-button {
     background-color: #31c3bd !important;
-    box-shadow: inset 0 -8px 0 0 #118C87 !important;
+    box-shadow: inset 0 -8px 0 0 #118c87 !important;
   }
   .x-win-button img {
-    filter: brightness(0) saturate(100%) invert(13%) sepia(11%) saturate(1676%) hue-rotate(151deg) brightness(95%) contrast(93%);
+    filter: brightness(0) saturate(100%) invert(13%) sepia(11%) saturate(1676%)
+      hue-rotate(151deg) brightness(95%) contrast(93%);
   }
   .o-win-button {
-    background-color: #F2B137 !important;
-    box-shadow: inset 0 -8px 0 0 #CC8B13 !important;
+    background-color: #f2b137 !important;
+    box-shadow: inset 0 -8px 0 0 #cc8b13 !important;
   }
   .o-win-button img {
-    filter: brightness(0) saturate(100%) invert(13%) sepia(11%) saturate(1676%) hue-rotate(151deg) brightness(95%) contrast(93%);
+    filter: brightness(0) saturate(100%) invert(13%) sepia(11%) saturate(1676%)
+      hue-rotate(151deg) brightness(95%) contrast(93%);
   }
 }
 
 /*notification*/
-.notification{
+.notification {
   position: fixed;
   top: 24px;
   left: 50%;
@@ -824,11 +834,11 @@ button {
   border-radius: 10px;
   transition: top 0.3s ease;
 }
-.notification img{
+.notification img {
   width: 100%;
 }
 
-.hide-notif{
+.hide-notif {
   top: -100%;
 }
 
